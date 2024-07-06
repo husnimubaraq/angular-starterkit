@@ -1,0 +1,7 @@
+<div class="grid grid-cols-3 md:grid-cols-4 overflow-x-auto gap-x-3 px-5">
+  @for(item of data; track item.id){
+    <service-category-item [data]="item" [active]="item.id === currentId" (onPressEvent)="onChange($event)" />
+  }@empty{
+    <p>There are no items.</p>
+  }
+</div>

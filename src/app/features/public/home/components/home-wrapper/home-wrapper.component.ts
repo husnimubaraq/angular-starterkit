@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { BasketIcon, HomeIcon } from 'components/icons';
 import { PublicLayout, Header } from 'layouts/public';
+import { HomeHero } from 'features/public/home/components/home-hero/home-hero.component'
+import { HomeService } from 'features/public/home/components/home-service/home-service.component'
 
 @Component({
   selector: 'home-wrapper',
@@ -10,6 +12,8 @@ import { PublicLayout, Header } from 'layouts/public';
     PublicLayout,
     Header,
     HomeIcon,
+    HomeHero,
+    HomeService,
     BasketIcon,
     RouterLink,
     RouterLinkActive,

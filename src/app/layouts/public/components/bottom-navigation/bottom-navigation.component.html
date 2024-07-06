@@ -1,28 +1,21 @@
 <div class="relative">
-  <div class="fixed inset-x-0 bottom-0 z-30 mx-auto max-w-screen-sm bg-secondary rounded-t-xl text-white">
-    <div class='flex justify-around h-20 gap-[6rem]'>
-      <div class='relative  grid grid-cols-1 gap-[5.5rem] place-items-center '>
-        <a routerLink="/" class="items-center justify-center gap-y-2 duration-200 z-10 flex flex-col">
-          <div class="flex-1">
-            <home-icon/>
-          </div>
+  <div class="fixed inset-x-0 bottom-0 z-30 mx-auto max-w-screen-sm bg-secondary rounded-t-xl text-white backdrop-filter backdrop-blur-sm bg-opacity-50">
+    <div class='flex justify-evenly h-20 gap-[6rem]'>
+      <div class='relative  grid grid-cols-1 place-items-center '>
+        <a routerLink="/" class="hover:text-primary">
+          <home-icon/>
         </a>
       </div>
-      <div class='relative grid grid-cols-1 gap-[5.5rem] place-items-center '>
-        <a routerLink="/" class="items-center justify-center gap-y-2 duration-200 z-10 flex flex-col">
-          <div class="flex-1">
-            <basket-icon/>
-          </div>
+      <div class='relative grid grid-cols-1 place-items-center '>
+        <a routerLink="/" class="hover:text-primary">
+          <basket-icon/>
         </a>
       </div>
-      <div class='relative   grid grid-cols-1 gap-[5.5rem] place-items-center '>
-        <a routerLink="/transaction" class="items-center justify-center gap-y-2 duration-200 z-10 flex flex-col">
-          <div class="flex-1">
-            <calendar-icon/>
-          </div>
+      <div class='relative grid grid-cols-1 place-items-center '>
+        <a routerLink="/transaction" class="hover:text-primary">
+          <calendar-icon/>
         </a>
       </div>
     </div>
   </div>
-
 </div>
