@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { BarsIcon, SearchIcon } from 'components/icons';
 import { TProductCategory } from "features/public/product";
 import { twMerge } from 'tailwind-merge';

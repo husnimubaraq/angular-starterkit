@@ -4,4 +4,9 @@
     <a routerLink="/" class="underline text-primary hover:text-white text-sm">See all</a>
   </div>
   <home-service-category/>
+  <div class="px-5">
+    @for (item of data; track $index) {
+      <service-item [data]="item" />
+    }
+  </div>
 </div>

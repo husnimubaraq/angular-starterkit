@@ -2,56 +2,110 @@ import { TProductCategory, TProduct } from "features/public/product";
 
 export const serviceCategories: TProductCategory[] = [
   {
-    id: 1,
-    image_url: 'https://i.ibb.co/6yxVmHv/Group-1.png',
-    image_url_m: 'https://i.ibb.co/6yxVmHv/Group-1.png',
-    image_url_s: 'https://i.ibb.co/6yxVmHv/Group-1.png',
-    name: 'Shaving',
-    category_type: 'service',
-    product_total: 0
+    "id": 21,
+    "name": "Shaving",
+    "category_type": "service",
+    "product_total": 1,
+    "image_url": "https://i.ibb.co/6yxVmHv/Group-1.png",
+    "image_url_s": "https://i.ibb.co/6yxVmHv/Group-1.png",
+    "image_url_m": "https://i.ibb.co/6yxVmHv/Group-1.png"
   },
   {
-    id: 2,
-    image_url: 'https://i.ibb.co/8bbRJjx/Vector-1.png',
-    image_url_m: 'https://i.ibb.co/8bbRJjx/Vector-1.png',
-    image_url_s: 'https://i.ibb.co/8bbRJjx/Vector-1.png',
-    name: 'Massage',
-    category_type: 'service',
-    product_total: 0
+    "id": 24,
+    "name": "Massage",
+    "category_type": "service",
+    "product_total": 2,
+    "image_url": "https://i.ibb.co/8bbRJjx/Vector-1.png",
+    "image_url_s": "https://i.ibb.co/8bbRJjx/Vector-1.png",
+    "image_url_m": "https://i.ibb.co/8bbRJjx/Vector-1.png"
   },
   {
-    id: 3,
-    image_url: 'https://i.ibb.co/9rqbZ6M/Group-1104-1.png',
-    image_url_m: 'https://i.ibb.co/9rqbZ6M/Group-1104-1.png',
-    image_url_s: 'https://i.ibb.co/9rqbZ6M/Group-1104-1.png',
-    name: 'Facial',
-    category_type: 'service',
-    product_total: 0
+    "id": 27,
+    "name": "Hair Care",
+    "category_type": "service",
+    "product_total": 1,
+    "image_url": "https://i.ibb.co/m0Qvhns/Group-1105-1.png",
+    "image_url_s": "https://i.ibb.co/m0Qvhns/Group-1105-1.png",
+    "image_url_m": "https://i.ibb.co/m0Qvhns/Group-1105-1.png"
   },
   {
-    id: 4,
-    image_url: 'https://i.ibb.co/m0Qvhns/Group-1105-1.png',
-    image_url_m: 'https://i.ibb.co/m0Qvhns/Group-1105-1.png',
-    image_url_s: 'https://i.ibb.co/m0Qvhns/Group-1105-1.png',
-    name: 'Hair Care',
-    category_type: 'service',
-    product_total: 0
+    "id": 28,
+    "name": "Grooming",
+    "category_type": "service",
+    "product_total": 1,
+    "image_url": "https://i.ibb.co/9rqbZ6M/Group-1104-1.png",
+    "image_url_s": "https://i.ibb.co/9rqbZ6M/Group-1104-1.png",
+    "image_url_m": "https://i.ibb.co/9rqbZ6M/Group-1104-1.png"
   }
 ]
 
 export const serviceLists: TProduct[] = [
   {
+    "id": 1,
+    "name": "Hair Cut",
+    "name_short": "Hair",
+    "price_net": "10.00",
+    "description": "&lt;p&gt;Hair cut man&lt;/p&gt;",
+    "product_stock_qty": 0,
+    "product_category_name": "Shaving",
+    "product_category_type": "service",
+    "image_url": "https://pos-barber.otakita.com/asset/file/product/product_dummy.png",
+    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/s_product_dummy.png",
+    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/m_product_dummy.png",
+    price: '',
+    stock: {
+      id_branch: 0,
+      qty: 0
+    }
+  },
+  {
+    "id": 2,
+    "name": "Body Massage",
+    "name_short": "Body",
+    "price_net": "8.00",
+    "description": "&lt;p&gt;Full Body Massage&lt;/p&gt;",
+    "product_stock_qty": 0,
+    "product_category_name": "Massage",
+    "product_category_type": "service",
+    "image_url": "https://pos-barber.otakita.com/asset/file/product/conscious-design-nMG20MmJV-4-unsplash.jpg",
+    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/s_conscious-design-nMG20MmJV-4-unsplash.jpg",
+    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/m_conscious-design-nMG20MmJV-4-unsplash.jpg",
+    price: '',
+    stock: {
+      id_branch: 0,
+      qty: 0
+    }
+  },
+  {
+    "id": 10,
+    "name": "Facial Massage",
+    "name_short": "Facia",
+    "price_net": "10.00",
+    "description": "&lt;p&gt;Facial massage with aroma oil&lt;/p&gt;",
+    "product_stock_qty": 0,
+    "product_category_name": "Massage",
+    "product_category_type": "service",
+    "image_url": "https://pos-barber.otakita.com/asset/file/product/product_dummy.png",
+    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/s_product_dummy.png",
+    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/m_product_dummy.png",
+    price: '',
+    stock: {
+      id_branch: 0,
+      qty: 0
+    }
+  },
+  {
     "id": 5,
-    "name": "Hair Coloring Brown",
-    "name_short": "Brown",
-    "price_net": "25.00",
+    "name": "Hair color",
+    "name_short": "Hair",
+    "price_net": "12.00",
+    "description": "&lt;p&gt;Include paint&lt;/p&gt;",
     "product_stock_qty": 0,
     "product_category_name": "Hair Care",
     "product_category_type": "service",
-    "image_url": "https://pos-barber.otakita.com/asset/file/product/valeriia-kogan-B0T4i_7bSNE-unsplash.jpg",
-    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/5s_valeriia-kogan-B0T4i_7bSNE-unsplash.jpg",
-    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/5m_valeriia-kogan-B0T4i_7bSNE-unsplash.jpg",
-    "description": "A soothing blend of essential oils for a calming massage. Promotes relaxation and stress relief.",
+    "image_url": "https://pos-barber.otakita.com/asset/file/product/35-Best-Men-s-Hairstyles-For-2024.jpg",
+    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/s_35-Best-Men-s-Hairstyles-For-2024.jpg",
+    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/m_35-Best-Men-s-Hairstyles-For-2024.jpg",
     price: '',
     stock: {
       id_branch: 0,
@@ -59,71 +113,17 @@ export const serviceLists: TProduct[] = [
     }
   },
   {
-    "id": 15,
-    "name": "Acne Facial",
-    "name_short": "Acne",
-    "price_net": "15.00",
+    "id": 8,
+    "name": "Eyebrow Grooming",
+    "name_short": "Eyebr",
+    "price_net": "6.00",
+    "description": "&lt;p&gt;For 1 time service&lt;/p&gt;",
     "product_stock_qty": 0,
-    "product_category_name": "Facial",
+    "product_category_name": "Grooming",
     "product_category_type": "service",
-    "image_url": "https://pos-barber.otakita.com/asset/file/product/facial1.jpeg",
-    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/15s_facial1.jpeg",
-    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/15m_facial1.jpeg",
-    "description": "High-quality razor set for a smooth shaving experience. Includes razor handle, blades, and shaving cream.",
-    price: '',
-    stock: {
-      id_branch: 0,
-      qty: 0
-    }
-  },
-  {
-    "id": 16,
-    "name": "Acne Facial Golden Age",
-    "name_short": "Acne",
-    "price_net": "20.00",
-    "product_stock_qty": 0,
-    "product_category_name": "Facial",
-    "product_category_type": "service",
-    "image_url": "https://pos-barber.otakita.com/asset/file/product/facial2.jpg",
-    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/16s_facial2.jpg",
-    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/16m_facial2.jpg",
-    "description": "A soothing blend of essential oils for a calming massage. Promotes relaxation and stress relief.",
-    price: '',
-    stock: {
-      id_branch: 0,
-      qty: 0
-    }
-  },
-  {
-    "id": 17,
-    "name": "Whitening Facial",
-    "name_short": "White",
-    "price_net": "25.00",
-    "product_stock_qty": 0,
-    "product_category_name": "Facial",
-    "product_category_type": "service",
-    "image_url": "https://pos-barber.otakita.com/asset/file/product/facial3.jpg",
-    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/17s_facial3.jpg",
-    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/17m_facial3.jpg",
-    "description": "Deep-cleansing face mask enriched with natural ingredients to revive and refresh your skin.",
-    price: '',
-    stock: {
-      id_branch: 0,
-      qty: 0
-    }
-  },
-  {
-    "id": 18,
-    "name": "Whitening Facial",
-    "name_short": "White",
-    "price_net": "25.00",
-    "product_stock_qty": 0,
-    "product_category_name": "Facial",
-    "product_category_type": "service",
-    "image_url": "https://pos-barber.otakita.com/asset/file/product/facial3.jpg",
-    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/17s_facial3.jpg",
-    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/17m_facial3.jpg",
-    "description": "Deep-cleansing face mask enriched with natural ingredients to revive and refresh your skin.",
+    "image_url": "https://pos-barber.otakita.com/asset/file/product/Eyebrow-Grooming-for-Men-_-How-to-Groom-A-Man-s-Eyebrows.jpg",
+    "image_url_s": "https://pos-barber.otakita.com/asset/file/product/s_Eyebrow-Grooming-for-Men-_-How-to-Groom-A-Man-s-Eyebrows.jpg",
+    "image_url_m": "https://pos-barber.otakita.com/asset/file/product/m_Eyebrow-Grooming-for-Men-_-How-to-Groom-A-Man-s-Eyebrows.jpg",
     price: '',
     stock: {
       id_branch: 0,

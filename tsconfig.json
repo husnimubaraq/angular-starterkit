@@ -37,6 +37,9 @@
       "layouts/*": [
         "src/app/layouts/*"
       ],
+      "services/*": [
+        "src/app/services/*"
+      ],
     }
   },
   "angularCompilerOptions": {

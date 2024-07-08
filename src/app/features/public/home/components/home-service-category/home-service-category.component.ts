@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { HomeIcon } from 'components/icons';
 import { Header } from 'layouts/public';
 import { ServiceCategoryItem, serviceCategories } from 'features/public/service'
 import { TProductCategory } from 'features/public/product'
+import { ServiceCategoryService } from 'features/public/home/services'
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -18,12 +19,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './home-service-category.component.html'
 })
 export class HomeServiceCategory {
-  currentId: number = 1;
+  currentId: number = serviceCategories[0].id;
 
   data = serviceCategories
 
+  serviceCategoryService = inject(ServiceCategoryService)
+
   onChange(item: TProductCategory){
-    console.log(item)
     this.currentId = item.id;
+    this.serviceCategoryService.currentId = item.id
   }
 }
