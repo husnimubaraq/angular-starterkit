@@ -1,7 +1,11 @@
-<div class="grid grid-cols-3 md:grid-cols-4 overflow-x-auto gap-x-3 px-5">
-  @for(item of data; track item.id){
-    <service-category-item [data]="item" [active]="item.id === currentId" (onPressEvent)="onChange($event)" />
-  }@empty{
-    <p>There are no items.</p>
+<div class="px-5">
+  @if(data.length > 0){
+    <swiper-container slides-per-view="3" space-between="20">
+      @for(item of data; track item.id){
+        <swiper-slide>
+          <service-category-item [data]="item" [active]="item.id === currentId" (onPressEvent)="onChange($event)" />
+        </swiper-slide>
+      }
+    </swiper-container>
   }
 </div>

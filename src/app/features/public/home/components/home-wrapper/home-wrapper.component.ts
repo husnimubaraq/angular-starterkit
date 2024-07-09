@@ -4,6 +4,7 @@ import { BasketIcon, HomeIcon } from 'components/icons';
 import { PublicLayout, Header } from 'layouts/public';
 import { HomeHero } from 'features/public/home/components/home-hero/home-hero.component'
 import { HomeService } from 'features/public/home/components/home-service/home-service.component'
+import { HomeProduct } from 'features/public/home/components/home-product/home-product.component'
 
 @Component({
   selector: 'home-wrapper',
@@ -14,6 +15,7 @@ import { HomeService } from 'features/public/home/components/home-service/home-s
     HomeIcon,
     HomeHero,
     HomeService,
+    HomeProduct,
     BasketIcon,
     RouterLink,
     RouterLinkActive,

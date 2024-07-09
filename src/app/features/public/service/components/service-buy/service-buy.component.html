@@ -1,33 +1,33 @@
-@if (data) {
 <div id="modalServiceBuy" tabindex="-1" aria-hidden="true"
-  class="fixed left-0 right-0 bottom-0 z-50 hidden max-h-full w-full overflow-y-auto overflow-x-hidden md:inset-0">
-  <div class="bg-white dark:bg-slate-900 dark:text-white w-full mx-auto max-w-screen-sm p-5 rounded-t-2xl">
-    <div class="flex flex-col text-sm">
-      <div class="flex items-center justify-between">
-        <p class="text-xl font-medium text-black line-clamp-1">{{ data.product_category_name }}</p>
-        <button class="text-neutral-500 hover:text-dark-primary -mt-5">
-          <cross-icon class="w-[15px] h-[15px]" />
+  class="fixed inset-0 z-50 hidden max-h-full w-full overflow-y-auto overflow-x-hidden md:inset-0 mx-auto max-w-screen-sm backdrop-blur-xl">
+  <div class="fixed inset-x-0 bottom-0">
+    <div class="bg-white dark:bg-slate-900 dark:text-white w-full mx-auto max-w-screen-sm p-5 rounded-t-2xl">
+      <div class="flex flex-col text-sm">
+        <div class="flex items-center justify-between">
+          <p class="text-xl font-medium text-black line-clamp-1">{{ data?.product_category_name }}</p>
+          <button class="text-neutral-500 hover:text-dark-primary -mt-5">
+            <cross-icon class="w-[15px] h-[15px]" />
+          </button>
+        </div>
+        <div class="flex items-center justify-between border-b border-neutral-300 pb-2 mb-2">
+          <p class="text-dark-primary">{{ data?.name }}</p>
+          <p class="font-medium text-sm text-dark-primary">{{ data?.price_net | currency }}</p>
+        </div>
+        <div class="flex items-center justify-between ">
+          <p>Total (include tax)</p>
+          <p class="font-medium text-lg text-dark-primary">{{ data?.price_net | currency }}</p>
+        </div>
+      </div>
+      <div class="flex w-full mt-5">
+        <button
+          class="bg-[#fce2b8] text-dark-primary rounded-none w-[30%] flex flex-col items-center rounded-l-lg py-3 md:py-3  hover:bg-primary hover:bg-primary/80">
+          <basket-icon />
+        </button>
+        <button
+          class="bg-primary text-black rounded-none rounded-r-lg w-full py-3 md:py-3  hover:bg-primary hover:bg-primary/80">
+          Book Now
         </button>
       </div>
-      <div class="flex items-center justify-between border-b border-neutral-300 pb-2 mb-2">
-        <p class="text-dark-primary">{{ data.name }}</p>
-        <p class="font-medium text-sm text-dark-primary">{{ data.price_net | currency }}</p>
-      </div>
-      <div class="flex items-center justify-between ">
-        <p>Total (include tax)</p>
-        <p class="font-medium text-lg text-dark-primary">{{ data.price_net | currency }}</p>
-      </div>
-    </div>
-    <div class="flex w-full mt-5">
-      <button
-        class="bg-[#fce2b8] text-dark-primary rounded-none w-[30%] flex flex-col items-center rounded-l-lg py-3 md:py-3  hover:bg-primary hover:bg-primary/80">
-        <basket-icon />
-      </button>
-      <button
-        class="bg-primary text-black rounded-none rounded-r-lg w-full py-3 md:py-3  hover:bg-primary hover:bg-primary/80">
-        Book Now
-      </button>
     </div>
   </div>
 </div>
-}

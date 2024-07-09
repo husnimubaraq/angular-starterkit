@@ -29,8 +29,4 @@ export class ServiceBuy  {
   ngDoCheck(){
     this.data = this.productService.getData()
   }
-
-  close() {
-
-  }
 }

@@ -1,0 +1,17 @@
+<div class="relative pb-5">
+  <div class="px-5 flex items-end justify-between mb-3">
+    <p class="font-medium text-lg text-white">Product</p>
+    <a routerLink="/" class="underline text-primary hover:text-white text-sm">See all</a>
+  </div>
+  <div class="px-5">
+    @if(data.length > 0){
+      <swiper-container slides-per-view="3" space-between="20" appSwiper>
+        @for (item of data; track $index) {
+        <swiper-slide>
+          <product-item [data]="item" />
+        </swiper-slide>
+        }
+      </swiper-container>
+    }
+  </div>
+</div>

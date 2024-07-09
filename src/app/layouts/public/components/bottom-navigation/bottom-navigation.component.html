@@ -1,21 +1,21 @@
-<div class="relative">
-  <div class="fixed inset-x-0 bottom-0 z-30 mx-auto max-w-screen-sm bg-secondary rounded-t-xl text-white backdrop-filter backdrop-blur-sm bg-opacity-50">
-    <div class='flex justify-evenly h-20 gap-[6rem]'>
-      <div class='relative  grid grid-cols-1 place-items-center '>
-        <a routerLink="/" class="hover:text-primary">
-          <home-icon/>
+@if (show) {
+  <div class="fixed z-30 w-full h-16 max-w-lg -translate-x-1/2 bg-secondary rounded-full bottom-4 left-1/2 backdrop-blur-sm bg-opacity-50 dark:bg-gray-700 dark:border-gray-600">
+    <div class="grid h-full max-w-lg grid-cols-3 mx-auto">
+        <a routerLink="/" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-s-full text-white hover:text-black hover:bg-primary dark:hover:bg-gray-800 group">
+            <home-icon/>
+            <span class="sr-only">Home</span>
         </a>
-      </div>
-      <div class='relative grid grid-cols-1 place-items-center '>
-        <a routerLink="/" class="hover:text-primary">
-          <basket-icon/>
+        <div class="flex items-center justify-center -mt-16">
+            <button type="button" class="inline-flex items-center justify-center w-20 h-20 font-medium text-white bg-primary rounded-full hover:bg-primary/80 group focus:ring-4 focus:ring-primary focus:outline-none dark:focus:ring-primary">
+                <basket-icon class="w-[30px] h-[30px]"/>
+                <span class="sr-only">Cart</span>
+            </button>
+        </div>
+        <a routerLink="/transaction" type="button" class="inline-flex flex-col items-center justify-center px-5 rounded-e-full text-white hover:text-black hover:bg-primary dark:hover:bg-gray-800 group">
+            <calendar-icon/>
+            <span class="sr-only">Transaction</span>
         </a>
-      </div>
-      <div class='relative grid grid-cols-1 place-items-center '>
-        <a routerLink="/transaction" class="hover:text-primary">
-          <calendar-icon/>
-        </a>
-      </div>
     </div>
   </div>
-</div>
+
+}
