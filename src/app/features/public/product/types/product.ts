@@ -11,6 +11,7 @@ export type TProduct = {
   image_url_s: string
   image_url_m: string
   description: string
+  amount: string
   stock: {
       id_branch: number
       qty: number

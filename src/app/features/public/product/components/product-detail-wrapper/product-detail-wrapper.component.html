@@ -1,14 +1,70 @@
-<public-layout>
-  @if (data) {
-    <div class="relative mb-[10%]">
-      <div class="flex flex-col">
-        <div className="w-full h-[200px]">
-          <img
-              [src]="data.image_url"
-              className="object-cover w-full h-[200px]"
-          />
+@if (data) {
+<public-layout containerClass="bg-white">
+  <div class="relative overflow-y-auto">
+    <div class="flex flex-col">
+      <div class="w-full h-[500px]">
+        <img [src]="data.image_url" class="object-cover w-full h-full" />
+      </div>
+      <div class="absolute left-0 right-0 top-0 px-5 py-5">
+        <div class="flex items-center justify-between text-black">
+          <button class="hover:text-primary">
+            <chevron-left-icon class="w-[20px] h-[20px]" />
+          </button>
         </div>
       </div>
     </div>
-  }
+    <div class="bg-white rounded-t-3xl -mt-5 flex flex-col relative">
+      <div class="flex flex-start justify-between bg-white rounded-lg  mt-3 p-5">
+        <div class="h-2 w-2 blur-[2px] mt-2.5 rounded-full bg-dark-primary "></div>
+        <div class="ml-4 flex flex-col flex-1">
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-medium text-dark-primary">{{ data.name }}</p>
+            <p class="text-lg font-medium text-dark-primary">{{ data.price_net | currency }}</p>
+          </div>
+          <div class="bg-dark-primary/20 rounded-xl mt-5 text-center text-sm">
+            <div class="flex">
+              <div class="py-1 border-b border-r border-white w-[50%] text-dark-primary">
+                <p>Stock</p>
+              </div>
+              <div class="py-1 border-b border-r border-white w-[50%] text-dark-primary">
+                <p>Amount</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="py-1 border-b border-r border-white w-[50%] text-black">
+                <p>{{ data.product_stock_qty }}</p>
+              </div>
+              <div class="py-1 border-b border-r border-white w-[50%] text-black">
+                <p>{{ data.amount !== "" ? data.amount : "-" }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 gap-y-3">
+            <div>
+              <p class="font-medium text-dark-primary">Ingredient</p>
+              <p class="text-black">This face wash contains thermal spring water, ambophenol thats makes your skin
+                calm.</p>
+            </div>
+            <div>
+              <p class="font-medium text-dark-primary">For sensitive skin</p>
+              <p class="text-black">An eco-friendly and alcohol free serum infused with a blend of organic complexes
+                like sun flower</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-full mt-5 fixed inset-x-0 bottom-0 max-w-screen-sm mx-auto">
+        <button
+          (click)="onClickCart()"
+          class="bg-[#fce2b8] text-dark-primary  w-[30%] flex flex-col items-center py-3 md:py-3  hover:bg-primary hover:bg-primary/80">
+          <basket-icon />
+        </button>
+        <button class="bg-primary text-black  w-full py-3 md:py-3  hover:bg-primary hover:bg-primary/80">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+  <product-buy [data]="data" />
 </public-layout>
+}

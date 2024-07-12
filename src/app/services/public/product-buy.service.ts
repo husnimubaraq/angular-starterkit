@@ -4,7 +4,7 @@ import { TProduct } from 'features/public/product'
 @Injectable({
   providedIn: 'root',
 })
-export class ServiceBuyService {
+export class ProductBuyService {
   data: TProduct | null = null;
 
   getData(): TProduct {

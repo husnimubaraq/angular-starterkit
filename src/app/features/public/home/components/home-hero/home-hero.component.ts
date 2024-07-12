@@ -16,11 +16,10 @@ import { SideBarService } from 'layouts/public';
 })
 export class HomeHero {
 
-  constructor(private sideBarService: SideBarService) {
+  constructor(private sideBarService: SideBarService) {}
 
-  }
-
-  clickMenu(){
-    this.sideBarService.show = true
+  clickMenu() {
+    // this.sideBarService.show = true
+    this.sideBarService.openModal()
   }
 }
