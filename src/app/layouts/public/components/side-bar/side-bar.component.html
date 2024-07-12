@@ -1,0 +1,22 @@
+<div id="modalSideBar" tabindex="-1" aria-hidden="true"
+  class="fixed inset-0 z-50 hidden max-h-full w-full overflow-y-auto overflow-x-hidden md:inset-0 mx-auto max-w-screen-sm backdrop-blur-xl">
+  <div class="fixed top-0 right-0">
+    <div class="relative flex flex-col items-end gap-3 p-5">
+      <button
+        class="text-white hover:text-primary"
+        data-modal-hide="modalSideBar"
+      >
+        <bars-icon class="w-5 h-5"/>
+      </button>
+      @for (item of data; track $index) {
+        <a
+          [routerLink]="item.route"
+          class="bg-white rounded-md px-3 py-2 flex items-center gap-3 text-sm text-black hover:bg-primary hover:text-white"
+        >
+          <p>{{ item.title }}</p>
+          <ng-container *ngComponentOutlet="item.icon; inputs: {class}"></ng-container>
+        </a>
+      }
+    </div>
+  </div>
+</div>

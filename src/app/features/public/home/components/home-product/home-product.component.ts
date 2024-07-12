@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, ElementRef, ViewChild, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HomeIcon } from 'components/icons';
 import { Header } from 'layouts/public';
 import { TProduct, ProductItem, productLists } from 'features/public/product'
