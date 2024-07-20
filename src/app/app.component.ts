@@ -13,7 +13,7 @@ import { initFlowbite } from 'flowbite';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'angular-starterkit';
+  title = 'Barbershop';
 
   ngOnInit(): void {
     initFlowbite();
